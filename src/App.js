@@ -5,26 +5,7 @@ import AddTask from "./components/AddTask"
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false)
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      text: 'Praying',
-      day: 'Sep 3rd at 0:01am',
-      remainder: true
-    },
-    {
-      id: 2,
-      text: 'Exercising',
-      day: 'Sep 4th at 6:00am',
-      remainder: true
-    },
-    {
-      id: 3,
-      text: 'It can be anything',
-      day: 'Sep 24th at 2:30pm',
-      remainder: false
-    },
-  ])
+  const [tasks, setTasks] = useState([])
 
   //Submit task
   const addTask = (task) => {
